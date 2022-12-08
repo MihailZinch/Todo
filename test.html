@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log('test');
+
+      let a = [
+        { name: 'mihail', age: '25' },
+        { name: 'elena', age: '33' },
+      ];
+      console.log(a);
+
+      for (let i = 0; i < a.length; i++) {
+        let item = a[i];
+        if (item.name == 'elena' && item.age == '3') {
+            console.log(true)
+            console.log(item.name, item.age)
+        } 
+      }
+    </script>
+  </body>
+</html>

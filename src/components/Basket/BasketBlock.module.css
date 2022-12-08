@@ -1,0 +1,49 @@
+.basketBlock {
+  position: absolute;
+  right: 200px;
+  top: 180px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  color: black;
+  max-width: 250px;
+  font-size: 16px;
+  background-color: #fbfef9;
+  border-radius: 10px;
+  box-shadow: 0 0 20px red, 0 0 20px red, 0 0 20px red;
+}
+.basketIcon {
+  font-size: 50px;
+  color: black;
+  cursor: pointer;
+}
+
+.clearBasketIcon {
+  font-size: 50px;
+  /* background-color: lightgreen; */
+  color: green;
+  cursor: pointer;
+}
+.clearBasketIcon:hover,
+.basketIcon:hover {
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+.basketTodo {
+  border-radius: 5px;
+  box-shadow: 0 0 2px black;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.basketTodo + .basketTodo {
+  margin-top: 5px;
+}
+
+.basketTodo:hover {
+  transform: scale(1.3);
+  background-color: white;
+  transition: 0.4s;
+  box-shadow: 0 0 10px black;
+}

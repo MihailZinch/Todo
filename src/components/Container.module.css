@@ -1,0 +1,9 @@
+.Container {
+  box-sizing: border-box;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+h1 {
+  margin: 20px auto;
+}
