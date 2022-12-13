@@ -1,12 +1,16 @@
 import { useState } from 'react';
 import styles from './TodoForm.module.css';
-function TodoForm({ addTodo, statusUser }) {
+function TodoForm({ addTodo, userActive, setBlockAuthOpen }) {
   const [text, setText] = useState('');
   const onSubmitHandler = (e) => {
     e.preventDefault();
-    if (statusUser) {
-      addTodo(text);
-      setText('');
+    if (userActive) {
+      if (text.length >= 2) {
+        addTodo(text);
+        setText('');
+      }
+    } else {
+      setBlockAuthOpen(false);
     }
   };
   return (
@@ -16,6 +20,7 @@ function TodoForm({ addTodo, statusUser }) {
           placeholder="Enter new todo"
           value={text}
           onChange={(e) => setText(e.target.value)}
+          minLength="2"
         />
         <button type="submit">Submit</button>
       </form>

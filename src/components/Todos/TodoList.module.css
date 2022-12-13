@@ -1,3 +1,19 @@
 .todoListContainer {
-    padding: 10px;
+  padding: 10px;
+}
+.btnClearList {
+  border: none;
+  font-size: 22px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.btnClearList:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+  background-color: rgb(255, 114, 114);
+  box-shadow: 0 0 10px red;
+  cursor: pointer;
 }
